@@ -1,0 +1,10 @@
+services:
+  ragbot:
+    build: .
+    container_name: ragbot
+    ports:
+      - "8501:8501"
+    volumes:
+    - .:/app/
+    env_file:
+    - .env
